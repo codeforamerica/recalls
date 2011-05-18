@@ -3,7 +3,7 @@ require 'JSON'
 
 module USASearch
   class Client
-    module Products
+    module Recalls
     include USASearch::Client::Connection
 
     end
