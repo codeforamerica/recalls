@@ -29,7 +29,7 @@ describe USASearch do
          to_return(:status => 401, :body => "Invalid API Key", :headers => {})
       end
       
-      it "should return a hash with an error" do
+      it "should return an error" do
         response = USASearch.search
         response.is_a?(String).should be_true
         response.should == "Invalid API Key"
