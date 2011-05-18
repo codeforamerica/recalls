@@ -10,9 +10,9 @@ describe USASearch do
   describe "search" do
     context "when a search returns a success" do
       before do
-        stub_request(:get, 'http://search.usa.gov/search/recalls').
-        with(:api_key => 'badcheese', :format => "json").
-        to_return(:body => fixture('recalls_search_response.json'), :headers => {'Content-Type' => 'text/json; charset=utf-8'})
+        stub_request(:get, "http://search.usa.gov/search/recalls/?format=json").
+         with(:headers => {'Accept'=>'application/json'}).
+         to_return(:status => 200, :body => fixture('recalls_search_response.json'), :headers => {})
       end
       
       it "should return a hash with the results" do
