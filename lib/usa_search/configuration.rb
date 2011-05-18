@@ -10,16 +10,14 @@ module USASearch
       :proxy,
       :format].freeze
 
-    VALID_FORMATS = [
-      :json,
-      :xml].freeze
+    VALID_FORMATS = [:json].freeze
 
     DEFAULT_ADAPTER      = Faraday.default_adapter
     DEFAULT_ENDPOINT     = nil
     DEFAULT_PROXY        = nil
     DEFAULT_FORMAT       = :json
     DEFAULT_API_KEY      = nil.freeze    
-    DEFAULT_USER_AGENT   = "USASearch Ruby Gem #{USASearch::VERSION}".freeze
+    DEFAULT_USER_AGENT   = "USASearch Recalls Ruby Gem #{USASearch::VERSION}".freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
 

@@ -5,8 +5,9 @@ module USASearch
   class Client
     module Recalls
     include USASearch::Client::Connection
-      def search
-        
+      def search(options = {})
+        options.merge!({:format => "json"})                
+        response = get('', options)
       end
     end
   end

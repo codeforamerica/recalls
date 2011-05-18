@@ -8,11 +8,10 @@ module USASearch
 
       def connection(raw=false)
         options = {
-          #:headers => {'Accept' => "*/#{format}", 'User-Agent' => user_agent},
           :headers => {'Accept' => 'application/json'},
           :proxy => proxy,
           :ssl => {:verify => false},
-          :url => 'http://api.USASearch.gov/' + endpoint.to_s
+          :url => 'http://search.usa.gov/search/recalls' + endpoint.to_s
         }
 
         Faraday::Connection.new(options) do |connection|
