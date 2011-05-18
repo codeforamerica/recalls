@@ -1,5 +1,9 @@
 require 'simplecov'
-SimpleCov.start
+SimpleCov.start do
+  add_group 'USASearch', 'lib/usa_search'
+  add_group 'Faraday', 'lib/faraday'
+end
+
 require File.expand_path('../../lib/usa_search', __FILE__)
 require 'rspec'
 require 'webmock/rspec'
