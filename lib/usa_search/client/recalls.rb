@@ -7,7 +7,7 @@ module USASearch
     include USASearch::Client::Connection
       def search(options = {})
         options.merge!({:format => "json"})                
-        response = get('', options)
+        response = get('', options) rescue "Invalid API Key"
       end
     end
   end
