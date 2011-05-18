@@ -1,6 +1,6 @@
 require ::File.expand_path('../client/connection', __FILE__)
 require ::File.expand_path('../client/request', __FILE__)
-require ::File.expand_path('../client/products.rb', __FILE__)
+require ::File.expand_path('../client/recalls.rb', __FILE__)
 
 
 module USASearch
@@ -16,6 +16,6 @@ module USASearch
 
     include USASearch::Client::Connection
     include USASearch::Client::Request
-    include USASearch::Client::Products     
+    include USASearch::Client::Recalls     
   end
 end

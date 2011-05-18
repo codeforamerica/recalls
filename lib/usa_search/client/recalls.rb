@@ -5,7 +5,9 @@ module USASearch
   class Client
     module Recalls
     include USASearch::Client::Connection
-
+      def search
+        
+      end
     end
   end
 end
