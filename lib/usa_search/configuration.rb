@@ -6,6 +6,7 @@ module USASearch
       :adapter,
       :endpoint,
       :user_agent,
+      :api_key,
       :proxy,
       :format].freeze
 
@@ -17,6 +18,7 @@ module USASearch
     DEFAULT_ENDPOINT     = nil
     DEFAULT_PROXY        = nil
     DEFAULT_FORMAT       = :json
+    DEFAULT_API_KEY      = nil.freeze    
     DEFAULT_USER_AGENT   = "USASearch Ruby Gem #{USASearch::VERSION}".freeze
 
     attr_accessor *VALID_OPTIONS_KEYS
@@ -39,6 +41,7 @@ module USASearch
       self.endpoint     = DEFAULT_ENDPOINT
       self.format       = DEFAULT_FORMAT
       self.proxy        = DEFAULT_FORMAT
+      self.api_key      = DEFAULT_API_KEY      
     end
   end
 end
