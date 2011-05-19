@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-require 'JSON'
 
 module USASearch
   class Client
