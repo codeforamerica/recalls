@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("multi_json", "~> 0.0.5")
   s.add_runtime_dependency("multi_xml", "~> 0.2.0")
   s.authors = ["Dan Melton", "Erik Michaels-Ober"]
-  s.description = %q{A Ruby wrapper for the Recalls APIs.}
+  s.summary = %q{A Ruby wrapper for the Recalls APIs.}
   s.post_install_message =<<eos
 Using this gem in your project or organization? Add it to the apps wiki!
 https://github.com/codeforamerica/Recalls/wiki/apps
