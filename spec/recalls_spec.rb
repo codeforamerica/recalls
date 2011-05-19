@@ -1,8 +1,8 @@
 require 'helper'
 
-describe USASearch do
+describe Recalls do
   before do
-    USASearch.configure do |config|
+    Recalls.configure do |config|
       config.api_key = "badcheese"
     end
   end
@@ -16,7 +16,7 @@ describe USASearch do
       end
       
       it "should return a hash with the results" do
-        response = USASearch.search
+        response = Recalls.search
         response.is_a?(Hash).should be_true
         response["success"]["total"].should == 21840
       end
@@ -30,7 +30,7 @@ describe USASearch do
       end
       
       it "should return an error" do
-        response = USASearch.search
+        response = Recalls.search
         response.is_a?(String).should be_true
         response.should == "Invalid API Key"
       end

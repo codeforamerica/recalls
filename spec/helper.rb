@@ -1,14 +1,14 @@
 require 'simplecov'
 SimpleCov.start do
-  add_group 'USASearch', 'lib/usa_search'
+  add_group 'Recalls', 'lib/recalls'
   add_group 'Faraday', 'lib/faraday'
 end
 
-require File.expand_path('../../lib/usa_search', __FILE__)
+require File.expand_path('../../lib/recalls', __FILE__)
 require 'rspec'
 require 'webmock/rspec'
 
-require 'usa_search'
+require 'recalls'
 
 RSpec.configure do |config|
   config.include WebMock::API

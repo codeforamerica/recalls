@@ -1,18 +1,18 @@
-USASearch API
+Recalls API
 =======
-A Ruby wrapper for the USASearch APIs at http://search.usa.gov/api.
+A Ruby wrapper for the USA Search Product Recall API at http://search.usa.gov/api.
 
 Does your project or organization use this gem?
 ------------------------------------------
-Add it to the [apps](http://github.com/codeforamerica/usa_search_ruby/wiki/apps) wiki!
+Add it to the [apps](http://github.com/codeforamerica/recalls_ruby/wiki/apps) wiki!
 
 Installation
 ------------
-    $ [sudo] gem install USASearch
+    $ [sudo] gem install recalls
 
 Usage Examples
 --------------
-    require 'usa_search'
+    require 'recalls'
     
 Contributing
 ------------
@@ -27,12 +27,12 @@ Here are some ways *you* can contribute:
 * by writing specifications
 * by writing code (**no patch is too small**: fix typos, add comments, clean up inconsistent whitespace)
 * by refactoring code
-* by resolving [issues](http://github.com/cfalabs/USASearch/issues)
+* by resolving [issues](http://github.com/cfalabs/Recalls/issues)
 * by reviewing patches
 
 Submitting an Issue
 -------------------
-We use the [GitHub issue tracker](http://github.com/cfalabs/USASearch/issues) to track bugs and
+We use the [GitHub issue tracker](http://github.com/cfalabs/Recalls/issues) to track bugs and
 features. Before submitting a bug report or feature request, check to make sure it hasn't already
 been submitted. You can indicate support for an existing issuse by voting it up. When submitting a
 bug report, please include a [Gist](http://gist.github.com/) that includes a stack trace and any
@@ -54,4 +54,4 @@ Submitting a Pull Request
 Copyright
 ---------
 Copyright (c) 2010 Code for America Laboratories
-See [LICENSE](https://github.com/cfalabs/USASearch/blob/master/LICENSE.mkd) for details.
+See [LICENSE](https://github.com/cfalabs/Recalls/blob/master/LICENSE.mkd) for details.
