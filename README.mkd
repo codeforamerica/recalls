@@ -21,6 +21,28 @@ Usage Examples
     # Return product recalls with the keywords cheese
     #   Recalls.search(:query => "cheese")
     
+    # Return product recalls with the keywords cheese between two dates
+    #   Recalls.search(:query => "cheese", :start_date => "2010-01-01", :end_date => "2011-01-01")
+    
+    # Return product recalls from a certain government agency, Valid values are: (1) NHTSA. National
+    Highway Traffic Safety Administration; (2) CPSC. Consumer Product Safety Commission; or (3) CDC.
+    Centers for Disease Control
+    #   Recalls.search(:organization => "CDC")
+    
+    # Return product recalls with by a upc code
+    #   Recalls.search(:upc => "123456")
+
+    # Return product recalls by a code, valid values are E, V [for vehicles], I, T, C, or X 
+    #   Recalls.search(:query => "V")
+
+    # Return product recalls by make or model
+    #   Recalls.search(:make => "ford")
+
+    # Return product recalls by page
+    #   Recalls.search(:query => "cheese", :page => "2")
+
+
+    
 Contributing
 ------------
 In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
