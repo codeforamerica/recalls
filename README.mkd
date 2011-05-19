@@ -14,6 +14,13 @@ Usage Examples
 --------------
     require 'recalls'
     
+    Recalls.configure do |config|
+      config.api_key = 'yourkeyforpostrequests'
+    end
+    
+    # Return product recalls with the keywords cheese
+    #   Recalls.search(:query => "cheese")
+    
 Contributing
 ------------
 In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
