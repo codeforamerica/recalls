@@ -1,10 +1,10 @@
 USASearch API
 =======
-A Ruby wrapper for the USASearch APIs at http://www.USASearch.gov/api.
+A Ruby wrapper for the USASearch APIs at http://search.usa.gov/api.
 
 Does your project or organization use this gem?
 ------------------------------------------
-Add it to the [apps](http://github.com/codeforamerica/USASearch/wiki/apps) wiki!
+Add it to the [apps](http://github.com/codeforamerica/usa_search_ruby/wiki/apps) wiki!
 
 Installation
 ------------
@@ -12,7 +12,7 @@ Installation
 
 Usage Examples
 --------------
-    require 'USASearch'
+    require 'usa_search'
     
 Contributing
 ------------
