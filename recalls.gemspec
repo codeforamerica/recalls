@@ -31,7 +31,6 @@ eos
   s.platform = Gem::Platform::RUBY
   s.require_paths = ["lib"]
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
-  s.summary = s.description
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.version = Recalls::VERSION
 end
