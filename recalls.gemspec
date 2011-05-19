@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.add_runtime_dependency("faraday_middleware", "~> 0.3.0")
   s.add_runtime_dependency("multi_json", "~> 0.0.5")
   s.add_runtime_dependency("multi_xml", "~> 0.2.0")
-  s.authors = ["Dan Melton", "Erik Michaels-Ober"]
+  s.authors = ["Dan Melton", "Erik Michaels-Ober", "Greg Gershman"]
   s.summary = %q{A Ruby wrapper for the Recalls APIs.}
   s.post_install_message =<<eos
 Using this gem in your project or organization? Add it to the apps wiki!
@@ -27,7 +27,7 @@ eos
   s.executables = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.files = `git ls-files`.split("\n")
   s.homepage = "http://rubygems.org/gems/recalls"
-  s.name = "Recalls"
+  s.name = "recalls"
   s.platform = Gem::Platform::RUBY
   s.require_paths = ["lib"]
   s.required_rubygems_version = Gem::Requirement.new(">= 1.3.6") if s.respond_to? :required_rubygems_version=
