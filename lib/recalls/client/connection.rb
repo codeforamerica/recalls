@@ -12,7 +12,7 @@ module Recalls
           :headers => {'Accept' => 'application/json'},
           :proxy => proxy,
           :ssl => {:verify => false},
-          :url => 'http://search.usa.gov/search/recalls' + endpoint.to_s
+          :url => 'http://api.usa.gov/recalls/search' + endpoint.to_s
         }
 
         Faraday::Connection.new(options) do |connection|

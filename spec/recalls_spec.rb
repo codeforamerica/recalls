@@ -10,7 +10,7 @@ describe Recalls do
   describe "search" do
     context "when a search returns a success" do
       before do
-        stub_request(:get, "http://search.usa.gov/search/recalls/?format=json").
+        stub_request(:get, "http://api.usa.gov/recalls/search/?format=json").
          with(:headers => {'Accept'=>'application/json'}).
          to_return(:status => 200, :body => fixture('recalls_search_response.json'), :headers => {})
       end
@@ -24,7 +24,7 @@ describe Recalls do
     
     context "when a search returns an error" do
       before do
-        stub_request(:get, "http://search.usa.gov/search/recalls/?format=json").
+        stub_request(:get, "http://api.usa.gov/recalls/search/?format=json").
          with(:headers => {'Accept'=>'application/json'}).
          to_return(:status => 401, :body => "Invalid API Key", :headers => {})
       end
