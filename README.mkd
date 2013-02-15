@@ -1,6 +1,6 @@
 Recalls API
 =======
-A Ruby wrapper for the USA Search Product Recall API at http://search.usa.gov/api.
+A Ruby wrapper for the USA Search Product Recall API at https://github.com/GSA-OCSIT/recalls_api/wiki/GET-search.
 
 Does your project or organization use this gem?
 ------------------------------------------
